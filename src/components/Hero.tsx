@@ -26,27 +26,30 @@ const Hero = () => {
                 <a
                     href="https://github.com/gallardojpsistemas"
                     target="_blank"
-                    className="px-6 py-3 bg-gray-900 text-white rounded-lg shadow hover:bg-gray-700"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-gray-800 dark:bg-gray-700 text-white rounded-lg shadow hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
                 >
                     GitHub
                 </a>
                 <a
                     href="https://linkedin.com/in/gallardo-juan-pablo"
                     target="_blank"
-                    className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-500"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-500 transition-colors"
                 >
                     LinkedIn
                 </a>
                 <a
                     href="mailto:gallardojpsistemas@gmail.com"
-                    className="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-500"
+                    className="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-500 transition-colors"
                 >
                     Contacto
                 </a>
                 <a
-                    href="https://drive.google.com/file/d/1_iqMqu7Xu3uO0RVtpqNejxob02CvLd5O/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1_iqMqu7Xu3uO0RVtpqNejxob02CvLd5O/view?usp=sharing"
                     target="_blank"
-                    className="px-6 py-3 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-500"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-500 transition-colors"
                 >
                     Descargar CV
                 </a>
