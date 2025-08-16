@@ -4,7 +4,7 @@ const Navigation = () => {
     return (
         <nav className="w-full sticky top-0 z-50 bg-white shadow-md dark:bg-gray-900 dark:text-white">
             <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-                <h1 className="text-2xl font-bold">Juan Dev</h1>
+                <h1 className="text-2xl font-bold">Juan Gallardo</h1>
                 <ul className="flex gap-6">
                     <li><a href="#home" className="hover:text-blue-600">Home</a></li>
                     <li><a href="#about" className="hover:text-blue-600">Sobre mí</a></li>
