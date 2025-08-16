@@ -14,7 +14,7 @@ export default function ScrollSection({
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ["start end", "end start"], // Mejor detección del scroll
+        offset: ["start end", "end start"],
     });
 
     const smoothProgress = useSpring(scrollYProgress, {
@@ -24,22 +24,21 @@ export default function ScrollSection({
         restDelta: 0.001,
     });
 
-    // Opacidad más sensible (empieza en 0.8 en lugar de 0.2)
-    const opacity = useTransform(smoothProgress, [0, 0.5, 1], [0.8, 1, 0.8]);
-    const y = useTransform(smoothProgress, [0, 1], [20, 0]);
-    const scale = useTransform(smoothProgress, [0, 1], [0.98, 1]);
+    // Animaciones optimizadas - opacidad 100% cuando está visible
+    const opacity = useTransform(smoothProgress, [0, 0.2, 0.8, 1], [0.9, 1, 1, 0.3]);
+    const scale = useTransform(smoothProgress, [0, 0.2, 0.8, 1], [0.92, 1, 1, 0.92]);
 
-    let style: any = { opacity, y };
-    if (variant === "zoom") style = { opacity, scale };
+    // Solo efecto zoom para todas las variantes
+    let motionStyle: any = { opacity, scale };
 
     return (
         <motion.div
             ref={ref}
-            style={style}
+            style={motionStyle}
             transition={{ type: "spring", damping: 25, stiffness: 150 }}
-            className="h-screen w-full flex items-center justify-center snap-start relative"
+            className="min-h-screen w-full flex items-center justify-center snap-start snap-always relative py-4 sm:py-6 md:py-0 px-4 sm:px-6 lg:px-8"
         >
-            <div className="w-full max-w-6xl mx-auto px-4">
+            <div className="w-full max-w-6xl mx-auto">
                 {children}
             </div>
         </motion.div>
