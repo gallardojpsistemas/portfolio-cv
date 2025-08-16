@@ -4,24 +4,22 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="flex flex-col items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-800 text-center px-6"
+            className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 text-center px-6"
         >
             <Image
                 src="/avatar.png"
                 alt="Foto de perfil"
                 width={160}
                 height={160}
-                className="rounded-full shadow-lg border-4 border-blue-600 mb-6"
+                className="rounded-full shadow-xl border-4 border-blue-600 mb-6"
             />
-            <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-2">
-                Hola, soy Juan
-            </h1>
-            <h2 className="text-2xl text-gray-600 dark:text-gray-300 mb-6">
+            <h1 className="text-5xl font-bold mb-2">Hola, soy Juan</h1>
+            <h2 className="text-2xl text-gray-600 dark:text-gray-400 mb-6">
                 Frontend Developer
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mb-8 leading-relaxed">
-                Me apasiona crear interfaces intuitivas y performantes con <b>React</b>,{" "}
-                <b>Next.js</b> y <b>TypeScript</b>.
+            <p className="text-gray-700 dark:text-gray-300 max-w-2xl mb-8 leading-relaxed">
+                Me apasiona crear interfaces intuitivas y performantes con{" "}
+                <b>React</b>, <b>Next.js</b> y <b>TypeScript</b>.
                 Esta web es mi CV interactivo, donde muestro habilidades, proyectos y cómo trabajo.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
