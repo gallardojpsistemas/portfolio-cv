@@ -6,30 +6,37 @@ const Hero = () => {
             id="home"
             className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 text-center px-4 sm:px-6 py-4 sm:py-6 md:py-0"
         >
-            <Image
-                src="/avatar.png"
-                alt="Foto de perfil de Juan Pablo Gallardo"
-                width={160}
-                height={160}
-                className="w-32 h-32 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-40 lg:h-40 rounded-full shadow-xl border-2 sm:border-3 md:border-4 border-blue-600 mb-3 sm:mb-4 md:mb-6"
-            />
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 sm:mb-2">
+            <div className="mb-4 sm:mb-6 md:mb-8">
+                <Image
+                    src="/avatar.png"
+                    alt="Foto de perfil de Juan Pablo Gallardo"
+                    width={280}
+                    height={280}
+                    className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full shadow-xl border-4 border-blue-600 object-cover"
+                    priority
+                />
+            </div>
+
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-3 md:mb-4">
                 Hola, soy Juan
             </h1>
-            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-400 mb-3 sm:mb-4 md:mb-6">
+
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 mb-4 sm:mb-5 md:mb-6">
                 Desarrollador Frontend | Licenciado en Sistemas
             </h2>
-            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl mb-4 sm:mb-6 md:mb-8 leading-relaxed px-2">
+
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-300 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl mb-6 sm:mb-8 md:mb-10 leading-relaxed">
                 Desarrollador Frontend con más de 2 años de experiencia profesional especializado en{" "}
                 <b>Next.js</b>, <b>TypeScript</b> y <b>Tailwind CSS</b>.
                 <br className="hidden sm:block" />
-                <span className="sm:hidden"> </span>
                 También tengo experiencia en Backend con <b>Node.js</b> y QA Automation.
                 <br className="hidden sm:block" />
-                <span className="sm:hidden"> </span>
                 Desde Corrientes, Argentina, construyo interfaces performantes y escalables.
             </p>
+
+            {/* Enlaces sociales */}
             <div className="flex flex-wrap gap-3 sm:gap-4 md:gap-5 justify-center items-center">
+                {/* GitHub */}
                 <a
                     href="https://github.com/gallardojpsistemas"
                     target="_blank"
@@ -43,6 +50,7 @@ const Hero = () => {
                     </svg>
                 </a>
 
+                {/* LinkedIn */}
                 <a
                     href="https://linkedin.com/in/gallardo-juan-pablo"
                     target="_blank"
@@ -56,6 +64,7 @@ const Hero = () => {
                     </svg>
                 </a>
 
+                {/* Email */}
                 <a
                     href="mailto:gallardojpsistemas@gmail.com"
                     className="group relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-emerald-500 via-green-500 to-teal-600 text-white rounded-xl shadow-lg hover:shadow-2xl hover:shadow-green-500/25 hover:scale-110 transition-all duration-300 overflow-hidden"
@@ -67,6 +76,7 @@ const Hero = () => {
                     </svg>
                 </a>
 
+                {/* CV */}
                 <a
                     href="https://drive.google.com/file/d/1_iqMqu7Xu3uO0RVtpqNejxob02CvLd5O/view?usp=sharing"
                     target="_blank"

@@ -4,17 +4,17 @@ const Contact = () => {
             id="contact"
             className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8 md:py-12 lg:py-16 text-center"
         >
-            {/* Título responsive */}
+            {/* Título */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">
                 Contacto
             </h2>
 
-            {/* Descripción con mejor espaciado */}
+            {/* Descripción */}
             <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-6 sm:mb-8 px-4">
                 Si te interesa trabajar conmigo, no dudes en escribirme.
             </p>
 
-            {/* Formulario responsive */}
+            {/* Formulario */}
             <form className="flex flex-col gap-2 sm:gap-3 md:gap-4 max-w-xs sm:max-w-sm md:max-w-md mx-auto mb-4 sm:mb-6 md:mb-8 lg:mb-12">
                 <input
                     type="text"
