@@ -6,6 +6,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: rgba(17, 24, 39, 0.8) transparent;
+  font-size: 75%;
 }
 
 body {
