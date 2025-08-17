@@ -8,23 +8,26 @@ const Hero = () => {
         >
             <Image
                 src="/avatar.png"
-                alt="Foto de perfil"
+                alt="Foto de perfil de Juan Pablo Gallardo"
                 width={160}
                 height={160}
-                className="w-32 h-32 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-40 lg:h-w-40 rounded-full shadow-xl border-2 sm:border-3 md:border-4 border-blue-600 mb-3 sm:mb-4 md:mb-6"
+                className="w-32 h-32 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-40 lg:h-40 rounded-full shadow-xl border-2 sm:border-3 md:border-4 border-blue-600 mb-3 sm:mb-4 md:mb-6"
             />
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 sm:mb-2">
                 Hola, soy Juan
             </h1>
             <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-400 mb-3 sm:mb-4 md:mb-6">
-                Frontend Developer
+                Desarrollador Frontend | Licenciado en Sistemas
             </h2>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl mb-4 sm:mb-6 md:mb-8 leading-relaxed px-2">
-                Me apasiona crear interfaces intuitivas y performantes con{" "}
-                <b>React</b>, <b>Next.js</b> y <b>TypeScript</b>.
+                Desarrollador Frontend con más de 2 años de experiencia profesional especializado en{" "}
+                <b>Next.js</b>, <b>TypeScript</b> y <b>Tailwind CSS</b>.
                 <br className="hidden sm:block" />
                 <span className="sm:hidden"> </span>
-                Esta web es mi CV interactivo, donde muestro habilidades, proyectos y cómo trabajo.
+                También tengo experiencia en Backend con <b>Node.js</b> y QA Automation.
+                <br className="hidden sm:block" />
+                <span className="sm:hidden"> </span>
+                Desde Corrientes, Argentina, construyo interfaces performantes y escalables.
             </p>
             <div className="flex flex-wrap gap-3 sm:gap-4 md:gap-5 justify-center items-center">
                 <a
@@ -60,7 +63,7 @@ const Hero = () => {
                 >
                     <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <svg className="relative z-10 w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661Z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                     </svg>
                 </a>
 

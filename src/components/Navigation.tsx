@@ -22,8 +22,8 @@ const Navigation = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="#projects" className="text-xs sm:text-lg md:text-lg lg:text-base hover:text-blue-600 cursor-default">
-                            Proyectos
+                        <a href="#experience" className="text-xs sm:text-lg md:text-lg lg:text-base hover:text-blue-600 cursor-default">
+                            Experiencia
                         </a>
                     </li>
                     <li>
