@@ -1,4 +1,3 @@
-"use client";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { ReactNode, useRef } from "react";
 
@@ -7,14 +6,11 @@ type ScrollSectionProps = {
     variant?: "fade" | "slideLeft" | "slideRight" | "zoom";
 };
 
-export default function ScrollSection({
-    children,
-    variant = "fade",
-}: ScrollSectionProps) {
+const ScrollSection = ({ children, variant = "fade" }: ScrollSectionProps) => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ["start 90%", "end 10%"],
+        offset: ["start 90%", "end 40%"],
     });
 
     const smoothProgress = useSpring(scrollYProgress, {
@@ -43,4 +39,6 @@ export default function ScrollSection({
             </div>
         </motion.div>
     );
-}
+};
+
+export default ScrollSection;
